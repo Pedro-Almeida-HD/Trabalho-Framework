@@ -1,13 +1,45 @@
-body{
-    h1{
-        color: var(--pink-10);  
-    }
-}
-.card{
+@import "https://unpkg.com/open-props";
+@import "https://unpkg.com/open-props/normalize.min.css";
+@import "https://unpkg.com/open-props/buttons.min.css";
+
+/*Planos*/
+
+.planos{
     display: flex;
     justify-content: center;
-    background-color: blue;
-    margin: 7%;
-    box-shadow: var(--shadow-6);
-    animation: var(--animation-fade-in) forward;
+    align-items: center;
+    gap: var(--size-px-10);
+}
+.plano1{
+    background-image: var(--gradient-9);
+    padding-block-start: var(--size-px-4) ;
+    padding-block-end: var(--size-px-8);
+    padding-inline: var(--size-px-8);
+    border: var(--border-size-1) solid var(--gray-1);
+    border-radius: var(--radius-conditional-3);
+}
+.plano2{
+    background-image: var(--gradient-4);
+    padding-block-start: var(--size-px-4) ;
+    padding-block-end: var(--size-px-8);
+    padding-inline: var(--size-px-8);
+    border: var(--border-size-1) solid var(--gray-1);
+    border-radius: var(--radius-conditional-3);
+}
+.planot{
+    color: var(--gray-10);
+    font-weight: var(--font-weitgh-8);
+    font-size: var(--font-size-8);
+}
+ul{
+    padding-block: var(--size-px-4);
+    list-style: none;
+}
+.listaplano::before{
+    content: "✔ "
+}
+.listaplano{
+    font-weight: var(--font-weight-5);
+    font-size: var(--font-size-3);
+    color: var(--gray-10);
 }
