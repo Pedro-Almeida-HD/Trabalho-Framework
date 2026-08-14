@@ -1,0 +1,13 @@
+body{
+    h1{
+        color: var(--pink-10);  
+    }
+}
+.card{
+    display: flex;
+    justify-content: center;
+    background-color: blue;
+    margin: 7%;
+    box-shadow: var(--shadow-6);
+    animation: var(--animation-fade-in) forward;
+}
