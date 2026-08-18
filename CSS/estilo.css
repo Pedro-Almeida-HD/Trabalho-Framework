@@ -1,4 +1,4 @@
-    @import "https://unpkg.com/open-props";
+@import "https://unpkg.com/open-props";
 @import "https://unpkg.com/open-props/normalize.min.css";
 @import "https://unpkg.com/open-props/buttons.min.css";
 @import "open-props/shadows";
@@ -28,19 +28,23 @@
         margin-bottom: var(--size-5);
     }
 }
-.Introdução{
+.Introdução{    
+    margin: 0%;
     margin-bottom: var(--size-8);
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
     .lado1{
-        width: 50%;
-        margin-right: 7%;
+        text-align: center;
+        padding-block-end: var(--size-8);
     }
     .lado2{
+        display: flex;
+        justify-content: center;
         height: auto;
         width: var(--size-15);
-        margin-left: 10%;
         margin-top: 4%;
+        padding-block: var(--size-7);
     }
 }
 .Importância{
@@ -89,6 +93,11 @@
         }
     }
 }
+.titulomain{
+    color: var(--indigo-6);
+    font-size: var(--size-10);
+}
+
 
 /*planos*/
 
@@ -185,6 +194,7 @@ ul{
     position: fixed;
     top: 0;
     width: 100%;
+    height: var(--size-11);
     background-color: var(--gray-11);
     z-index: var(--layer-1);
 }
