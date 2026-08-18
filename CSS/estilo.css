@@ -1,13 +1,17 @@
 @import "https://unpkg.com/open-props";
 @import "https://unpkg.com/open-props/normalize.min.css";
 @import "https://unpkg.com/open-props/buttons.min.css";
-@import "open-props/shadows";
+@import "https://unpkg.com/open-props/shadows.min.css";
 @import "https://unpkg.com/open-props/easings.min.css";
-
+@import "https://unpkg.com/open-props/masks.edges.min.css";
+body{
+    background-color: var(--gray-9);
+}
 .container{
     margin: 2%;
     padding: 5%;
-    p{
+     p{
+        color: var(--gray-0);
         font-family: var(--font-sans);
         font-size: var(--font-size-3);
         line-height: 1.6;
@@ -18,17 +22,19 @@
         box-shadow: var(--shadow-4);
     }
     h1{
+        color: var(--gray-0);
         font-size: var(--font-size-8);
         line-height: 1.2;
         margin-bottom: var(--size-7);
     }
     h2{
+        color: var(--gray-0);
         font-size: var(--font-size-6);
         line-height: 1.2;
         margin-bottom: var(--size-5);
     }
 }
-.Introdução{    
+.Introdução{   
     margin: 0%;
     margin-bottom: var(--size-8);
     display: flex;
@@ -59,7 +65,7 @@
     .card{
         margin-bottom: 1%;
         padding: 3%;
-        background-color: gray;
+        background-color: var(--blue-7);
         width: 28%;
         height: 430px;
         display: flex;
@@ -76,17 +82,20 @@
     }
 }
 .card-demo {
+  margin-inline: var(--size-12 );
+  padding-top: var(--size-12);
   background-color: var(--card-bg, var(--blue-5)); 
   padding: var(--size-5);
   border-radius: var(--radius-3);
-  color: white;
+  color: var(--gray-0);
   display: flex;
   justify-content: center;
   transition: background-color 0.3s var(--ease-2);
   p{
-    color:black;
+    color: var(--gray-12);
   }
 }
+
 
 .botoes-container {
   display: flex;
@@ -100,7 +109,7 @@
   padding: var(--size-2) var(--size-3);
   border: none;
   border-radius: var(--radius-2);
-  color: white;
+  color: var(--gray-0);
   font-weight: bold;
   cursor: pointer;
   transition: transform 0.2s var(--ease-2);
@@ -140,7 +149,7 @@
     justify-content: center;
     align-items: center;
     gap: var(--size-px-10);
-    padding-block: var(--size-12);
+    padding-block: var(--size-9);
 }
 .plano1{
     background-image: var(--gradient-9);
@@ -164,9 +173,11 @@
     padding-top: var(--size-px-2);
     display: flex;
     justify-content: space-between;
-    color: var(--gray-9);
     font-weight: var(--font-weight-5);
     font-size: var(--font-size-8);
+}
+#planot{
+    color: var(--gray-9)
 }
 ul{
     padding-block: var(--size-px-4);
@@ -177,6 +188,9 @@ ul{
 }
 .listaplanou::before{
     content: "✔ ";
+}
+.listaplanou2:before{
+    content: "✗";
 }
 .listaplano{
     line-height: var(--size-px-8);
@@ -194,6 +208,13 @@ ul{
     padding-inline-start: var(--size-px-2);
     color: var(--gray-9);
 }
+.listaplanou2{
+    line-height: var(--size-px-8);
+    font-weight: var(--font-weight-5);
+    font-size: var(--font-size-3);
+    padding-block-start: var(--size-px-2);
+    padding-inline-start: var(--size-px-2);
+    color: var(--gray-9);}
 .preco{
     display: flex;
     justify-content: start;
