@@ -7,6 +7,12 @@
     <link rel="shortcut icon" href="imgs/open-props.svg" type="image/x-icon">
     <link rel="stylesheet" href="CSS/estilo.css">
     <link rel="stylesheet" href="https://unpkg.com/open-props"/>
+       <script>
+  function mudarCor(cor) {
+    const card = document.getElementById('meu-card');
+    card.style.setProperty('--card-bg', cor);
+  }
+</script>
 </head>
 <body>
     <header>
@@ -47,6 +53,22 @@
                     <p>Não é preciso adivinhar a tonalidade ideal de uma cor, a curva de uma animação ou o tamanho exato de um espaçamento. As variáveis foram calibradas por especialistas em design, garantindo que suas interfaces fiquem harmoniosas por padrão.</p>
                 </div>
             </div>
+        </section>
+        <section class="demonstracao">
+         <h2>Aqui vai uma amostra grátis</h2>
+  
+           <div id="meu-card" class="card-demo">
+              <p>Clique nos botões abaixo e veja a mágica acontecer</p>
+           </div>
+
+           <div class="botoes-container">
+               <button onclick="mudarCor('var(--blue-5)')" style="background: var(--blue-5);">Azul</button>
+               <button onclick="mudarCor('var(--green-5)')" style="background: var(--green-5);">Verde</button>
+               <button onclick="mudarCor('var(--purple-5)')" style="background: var(--purple-5);">Roxo</button>
+               <button onclick="mudarCor('var(--red-5)')" style="background: var(--red-5);">Vermelho</button>
+               <button onclick="mudarCor('var(--orange-5)')" style="background: var(--orange-5);">Laranja</button>
+               <button onclick="mudarCor('var(--pink-5)')" style="background: var(--pink-5);">Rosa</button>
+           </div>
         </section>
         <section class="contexto">
             <div class="parte1">

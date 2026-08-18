@@ -75,6 +75,40 @@
         box-shadow: var(--shadow-6);
     }
 }
+.card-demo {
+  background-color: var(--card-bg, var(--blue-5)); 
+  padding: var(--size-5);
+  border-radius: var(--radius-3);
+  color: white;
+  display: flex;
+  justify-content: center;
+  transition: background-color 0.3s var(--ease-2);
+  p{
+    color:black;
+  }
+}
+
+.botoes-container {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: var(--size-2);
+  margin-top: var(--size-4);
+  justify-content: center;
+}
+
+.botoes-container button {
+  padding: var(--size-2) var(--size-3);
+  border: none;
+  border-radius: var(--radius-2);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s var(--ease-2);
+}
+
+.botoes-container button:hover {
+  transform: scale(1.05);
+}
 .contexto{
     margin-bottom: var(--size-8);
     display: flex;
@@ -195,7 +229,7 @@ ul{
     top: 0;
     width: 100%;
     height: var(--size-11);
-    background-color: var(--gray-11);
+    background-color: var(--gray-8);
     z-index: var(--layer-1);
 }
 .liheader {
