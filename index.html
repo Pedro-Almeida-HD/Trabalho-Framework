@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="CSS/estilo.css">
     <link rel="stylesheet" href="https://unpkg.com/open-props"/>
        <script>
-  function mudarCor(cor) {
+    function mudarCor(cor) {
     const card = document.getElementById('meu-card');
     card.style.setProperty('--card-bg', cor);
   }
@@ -18,16 +18,16 @@
     <header>
         <div class="header">
             <ul class="liheader">
-                <li><img class="logohead" src="imgs/open-props.svg" alt="logo"></li>
-                <li class="movheader">Porque escolher Open Props</li>
-                <li class="movheader">Demonstração</li>
-                <li class="movheader">História</li>
-                <li class="movheader">Adquira já</li>
+                <li><a href="#introdução"><img class="logohead" src="imgs/open-props.svg" alt="logo"></a></li>
+                <li class="movheader"><a href="#importância">Porque escolher Open Props</a></li>
+                <li class="movheader"><a href="#demonstraçao">Demonstração</a></li>
+                <li class="movheader"><a href="#contexto">História</a></li>
+                <li class="movheader"><a href="#planos">Adquira já</a></li>
             </ul>
         </div>
     </header>
     <div class="container">
-        <section class="Introdução">
+        <section class="Introdução" id="introdução">
             <div class="lado2">
               <img class="logo" src="imgs/open-props.svg" alt="Imagem site Open Props">
             </div>
@@ -36,7 +36,7 @@
               <p>O Open Props chegou para revolucionar a forma como você constrói interfaces ao trazer o poder dos design tokens modernos para o CSS 100% nativo. Sem instalações pesadas ou sintaxes estranhas: você ganha acesso instantâneo a cores incríveis, sombras profundas e animações fluidas usando apenas variáveis nativas do navegador.</p>
             </div>
         </section>
-        <section class="Importância">
+        <section class="Importância" id="importância">
             <h2>Porque usar o Open Props?</h2>
             <p>No desenvolvimento web moderno, a busca por produtividade muitas vezes nos obriga a escolher entre dois extremos: a rigidez de bibliotecas pesadas de CSS ou a digitação repetitiva de estilos nativos do zero. O Open Props surge como a solução definitiva para esse dilema, redefinindo como gerenciamos o design no código. Ele traz os chamados Design Tokens (variáveis padronizadas para cores, espaçamentos, sombras, animações e tipografia) diretamente para o CSS nativo. Isso significa que você ganha a velocidade de desenvolvimento de frameworks como o Tailwind, mas mantendo a elegância, a flexibilidade e a clareza do CSS padrão. Além disso possui mais algumas vantagens:</p>
             <div class="card-pai">
@@ -54,11 +54,11 @@
                 </div>
             </div>
         </section>
-        <section class="demonstracao">
-         <h2>Aqui vai uma amostra grátis</h2>
+        <section class="demonstracao" id="demonstraçao">
+         <h2>Aqui vai uma demonstração grátis</h2>
   
            <div id="meu-card" class="card-demo">
-              <p>Clique nos botões abaixo e veja a mágica acontecer</p>
+              <p style="color: var(--gray-0);">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
            </div>
 
            <div class="botoes-container">
@@ -70,7 +70,7 @@
                <button onclick="mudarCor('var(--pink-5)')" style="background: var(--pink-5);">Rosa</button>
            </div>
         </section>
-        <section class="contexto">
+        <section class="contexto" id="contexto">
             <div class="parte1">
               <h2>Como surgiu essa ferramenta?</h2>
               <p>O Open Props foi criado pelo desenvolvedor Adam Argyle, engenheiro de DevRel no Google focado em CSS. Ao observar o ecossistema web, ele percebeu uma grande divisão: de um lado, os frameworks utility-first (como o Tailwind) ofereciam extrema velocidade e padronização, mas exigiam etapas pesadas de compilação (build) e alteravam a forma tradicional de escrever HTML. Do outro, o CSS nativo evoluía a passos largos com as Variáveis CSS (Custom Properties), mas ainda exigia que o desenvolvedor criasse todos os seus tokens do zero.</p>
@@ -81,14 +81,14 @@
             </div>
         </section>
              <h1>Nosso Planos</h1>
-     <section>
+     <section class="planos" id="planos">
          <div class="planos">
              <div class="plano1">
-                 <h2 class="planot">Plano Básicos</h2>
+                 <h2 class="planot" id="planot">Plano Básicos</h2>
                  <ul>
                      <li class="listaplano">Liscensa dos props básicos</li>
-                     <li class="listaplano">sla</li>
-                     <li class="listaplanou">sla</li>
+                     <li class="listaplano">Mais de 100 props</li>
+                     <li class="listaplanou2">Suporte a comunidade</li>
                  </ul>
                  <div>
                      <h3 class="preco"><span class="moeda">R$</span>49,90/mês</h3>
@@ -98,11 +98,11 @@
                  </div>
              </div>
              <div class="plano2">
-                 <h2 class="planot">Plano Avançado</h2>
+                 <h2 class="planot" id="planot">Plano Avançado</h2>
                  <ul>
                      <li class="listaplano">Liscensa dos props básicos</li>
-                     <li class="listaplano">sla</li>
-                     <li class="listaplanou">sla</li>  
+                     <li class="listaplano">Mais de 100 props</li>
+                     <li class="listaplanou">Suporte a comunidade</li>
                  </ul>
              <div>
                  <h3 class="preco"><span class="moeda">R$</span>89,90/mês</h3>
@@ -127,7 +127,7 @@
                 <li>Desenvolvedores do Site</li>
                 <li><a href="https://github.com/Pedro-Almeida-HD">Pedro Almeida</a></li>
                 <li><a href="https://github.com/Lucas-souza-021">Lucas Souza</a></li>
-                <li><a href="">João Pedro</a></li>
+                <li><a href="https://github.com/joao-pedro1234567890">João Pedro</a></li>
                 <li><a href="https://github.com/eduaardo011">Eduardo Almeida</a></li>
             </ul>
         </div>
