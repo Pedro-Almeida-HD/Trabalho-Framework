@@ -56,7 +56,7 @@ body{
 .Importância{
     margin-bottom: var(--size-8);
     .card-pai{
-        margin: 2%;
+        margin: var(--size-4);
         padding: 1%;
         display: flex;
         justify-content: space-between;
@@ -64,15 +64,15 @@ body{
     }
     .card{
         margin-bottom: 1%;
-        padding: 3%;
+        padding: var(--size-8);
         background-color: var(--blue-7);
-        width: 28%;
-        height: 430px;
+        width: 30%;
+        height: var(--size-px-15);
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        border-radius: 7%;
+        border-radius: var(--radius-3);
         transition: transform 0.2s var(--ease-elastic-4);
         box-shadow: var(--shadow-4);
     }
@@ -159,7 +159,11 @@ body{
     border: var(--border-size-1) solid var(--gray-1);
     border-radius: var(--radius-conditional-3);
     box-shadow: var(--shadow-5);
+    transition: transform 0.2s var(--ease-elastic-3);
 }
+.plano1:hover{
+        transform: scale(1.05);
+    }
 .plano2{
     background-image: var(--gradient-4);
     padding-block-start: var(--size-px-4) ;
@@ -168,7 +172,11 @@ body{
     border: var(--border-size-1) solid var(--gray-1);
     border-radius: var(--radius-conditional-3);
     box-shadow: var(--shadow-5);
+    transition: transform 0.2s var(--ease-elastic-3);
 }
+.plano2:hover{
+        transform: scale(1.05);
+    }
 .planot{
     padding-top: var(--size-px-2);
     display: flex;
