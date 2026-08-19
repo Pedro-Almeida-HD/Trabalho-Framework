@@ -55,6 +55,17 @@ body{
 }
 .Importância{
     margin-bottom: var(--size-8);
+    .pai{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .image{
+        margin-left: var(--size-12);
+        box-shadow: var(---shadow-4);
+        border: var(--gray-4) var(--border-size-2) solid;
+        border-radius: var(--radius-3);
+    }
     .card-pai{
         margin: var(--size-4);
         padding: 1%;
